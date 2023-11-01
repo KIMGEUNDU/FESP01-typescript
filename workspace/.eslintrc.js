@@ -29,7 +29,7 @@ module.exports = {
     // 선언하고 사용하지않는 변수 경고
     '@typescript-eslint/no-unused-vars': 'warn',
     // 함수에 return 값이 없으면 경고
-    '@typescript-eslint/explicit-function-return-type': 'warn',
+    '@typescript-eslint/explicit-function-return-type': 'off',
     // 타입스크립트에서 변수 할당 시 기본데이터 타입에 값을 할당해도 경고안줘도돼
     '@typescript-eslint/no-inferrable-types': 'warn',
     // 데이터 타입 any 사용할수있엉
