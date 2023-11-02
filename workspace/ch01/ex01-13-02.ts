@@ -1,9 +1,10 @@
 // indexable 타입
-(function(){
+(function () {
   // TODO: User 인터페이스를 완성해서 실행하시오.
-  interface User{
+  interface User {
     name: string,
     email: string
+    phones: object
   }
 
   var kim: User = {
