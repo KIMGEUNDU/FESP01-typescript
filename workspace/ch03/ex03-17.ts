@@ -1,5 +1,5 @@
 // ex03-04.ts 복사
-(()=>{
+(() => {
   interface TodoInfoDetail {
     _id: number;
     title: string;
@@ -28,6 +28,17 @@
     title: '할일 3',
     done: false
   };
+
+  function printTodo(todo: TodoRegist | TodoInfo) {
+    if ('_id' in todo) {
+      console.log(`[TodoInfo] _id: ${todo._id}, title: ${todo.title}`);
+    } else {
+      console.log(`[TodoRegist] title: ${todo.title}, content: ${todo.content}`);
+    }
+  }
+
+  printTodo(todo1)
+  printTodo(todo2)
 
   console.log(todo1, todo2, todo3);
 })();
